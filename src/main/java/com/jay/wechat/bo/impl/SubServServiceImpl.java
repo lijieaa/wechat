@@ -5,12 +5,14 @@ import com.jay.wechat.bo.SubServService;
 import com.jay.wechat.dao.SubServMapper;
 import com.jay.wechat.po.SubServ;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Administrator on 2018/4/8.
  */
+@Service
 public class SubServServiceImpl implements SubServService {
     @Autowired
     SubServMapper subServMapper;

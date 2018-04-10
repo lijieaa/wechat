@@ -2,6 +2,10 @@ appid: wx69360391a42a251c
 secret: d4624c36b6795d1d99dcf0547af5443d
 access_token_url: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appid}&secret=${secret}
 
+server:
+ port: 8081
+
+
 spring:
  datasource:
   name: test
@@ -24,8 +28,8 @@ spring:
   poolPreparedStatements: true
   maxOpenPreparedStatements: 20
 mybatis:
- mapper-locations: classpath:mapping/*.xml
- type-aliases-package: com.jay.wechat
+ mapper-locations: classpath:mappers/*.xml
+ type-aliases-package: com.jay.wechat.po
 
 #pagehelper分页插件
 

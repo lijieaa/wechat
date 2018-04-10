@@ -2,6 +2,8 @@ package com.jay.wechat.dao;
 
 import com.github.pagehelper.Page;
 import com.jay.wechat.po.SubServ;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
 public interface SubServMapper {
